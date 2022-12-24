@@ -40,7 +40,7 @@
             <tbody>
               <?php
 
-              $query="SELECT * from tb_gejala";
+              $query="SELECT * from tabel_gejala";
               $result=$mysqli->query($query);
               $num_result=$result->num_rows;
               if ($num_result > 0 ) { 
@@ -50,13 +50,13 @@
                   ?>
                   <tr>
                     <td width="5%"><?php echo $no+=1; ?></td>
-                    <td><?php echo $id_gejala; ?></td>
-                    <td><?php echo $nm_gejala; ?></td>
+                    <td><?php echo $kode_gejala; ?></td>
+                    <td><?php echo $nama_gejala; ?></td>
                   <td width="20%">
-                    <a href="?hal=gejala_olah&id=<?php echo $id_gejala; ?>" 
+                    <a href="?hal=gejala_olah&id=<?php echo $kode_gejala; ?>" 
                       class="btn btn-icon btn-primary" title="Edit Data"><i class="fa fa-edit"></i> </a>
 
-                      <a class="btn btn-danger" title="Hapus Data" href="gejala_proses.php?hapus=<?php echo $id_gejala;?>" 
+                      <a class="btn btn-danger" title="Hapus Data" href="gejala_proses.php?hapus=<?php echo $kode_gejala;?>" 
                         onclick="return confirm('Apakah anda yakin akan menghapus data ini?')"> <i class="fa fa-trash"></i></a>
 
                       </td>
