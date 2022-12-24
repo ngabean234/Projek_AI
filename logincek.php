@@ -8,7 +8,7 @@ $user=$_POST['username'];
 $pass=$_POST['password']; 
 
   //Pengecekan ada data dalam login tidak
-$sqladmin="Select id_admin from tb_admin where username='$user' and password='$pass'";
+$sqladmin="Select id from user where username='$user' and password='$pass'";
 
 
 if (CekExist($mysqli,$sqladmin)== true){
