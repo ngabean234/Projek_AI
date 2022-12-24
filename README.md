@@ -1,2 +1,3 @@
-# sp_anemi_cf
-Aplikasi Sistem Pakar dengan Metode CF
+# Sistem Pakar Diagnosa Penyakit Sapi
+Aplikasi Sistem Pakar dengan Metode Backward Chaining
+
